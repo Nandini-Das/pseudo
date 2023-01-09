@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h1:hover{
+         color: aqua;
+        background-color: blanchedalmond;
+        /* padding: 40px;
+        margin: 40px;
+        font-size: 70px; */
+        }
+        .focus:focus:focus{
+            color: red;
+            font-weight: 770px;
+        }
+        a:visited{
+            
+            /* color: red; */
+            color: blue;
+        }
+        /* li{
+            color: blue;
+        } */
+        /* li:first-child{
+            background-color: aquamarine; 
+        }*/
+        /* li:last-child{
+            color: blueviolet;
+            font-size: 30px;
+        } */
+        /* li:nth-child(1n){
+            color: red
+        } */
+         /* li:nth-child(2n){
+            color: orangered;
+         } */
+         /* li:nth-child(3n){
+            color: orangered;
+         } */
+         li:nth-child(2n+1){
+            background-color: orangered;
+         }
+         h4::before{
+            content: 'MYSELF';
+            /* margin: 5px; */
+         }
+         /* h4:after{
+            content: 'YOU?';
+            font-size: 20px;
+            background-color: cadetblue;
+         } */
+
+         .special:after{
+            content: 'YOU?';
+            font-size: 20px;
+            background-color: cadetblue;
+         }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <input type="text" value="">
+    <input class="focus" type="text" value="">
+    <input type="text" value="">
+    <br>
+    <a href="https://www.google.com/">GOOGLE</a>
+    <a href="https://brandnewview.com/">BRANDVIEW</a>
+    <a href="https://github.com/">GITHUB</a>
+    <br>
+    <h4>lorem ipsum dolor -1</h4>
+    <h4 class="special">lorem ipsum dolor -2</h4>
+    <h4>lorem ipsum dolor -3</h4>
+    <ul class="li">
+        <li>BLack</li>
+        <li>Blue</li>
+        <li>White</li>
+        <li>Red</li>
+        <li>Pink</li>
+        <li>Orange</li>
+        <li>Green</li>
+        <li>Yellow</li>
+        <li>Grey</li>
+    </ul>
+</body>
+</html>
